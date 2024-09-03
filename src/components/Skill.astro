@@ -1,0 +1,7 @@
+---
+const {name, href} = Astro.props;
+---
+<div class="flex flex-col items-center m-5">
+    <img src={href} class = "h-32 mb-3 grayscale" />
+    <p class="text-xl font-body">{name}</p>
+</div>

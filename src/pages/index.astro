@@ -1,7 +1,8 @@
 ---
 const pageTitle="Luke Amos";
 import Button from "../components/Button.astro";
-import Header from "../components/Header.astro"
+import Header from "../components/Header.astro";
+import Skill from "../components/Skill.astro"
 ---
 <html lang="en">
 	<Header pageTitle={pageTitle} />
@@ -14,7 +15,7 @@ import Header from "../components/Header.astro"
 			</div>
 		</div>
 		<!-- About Me -->
-		<div class="w-screen h-screen flex flex-col items-center">
+		<div class="w-screen flex flex-col items-center">
 			<!-- Brief Intro -->
 			<div class="w-1/2">
 				<p class="text-gray-600 font-heading text-8xl text-center m-10 underline decoration-green-400">About Me</p>
@@ -34,7 +35,20 @@ import Header from "../components/Header.astro"
 			<!-- Skills -->
 			 <div class="w-1/2">
 				<p class="text-gray-600 font-heading text-6xl text-left m-10 underline decoration-green-400">My Skills</p>
-				<div class="grid-cols"
+				<div class="grid grid-rows-3 grid-cols-4">
+					<Skill name ="Python" href="https://images.ctfassets.net/o7xu9whrs0u9/2ouLbxXuIPxE64HNdvmsSU/c948e2ca51d2b4802fcbe6ee9f65819c/Python-logo.png" />
+					<Skill name="Qiskit" href="https://static-00.iconduck.com/assets.00/qiskit-icon-512x512-fucgn1ou.png" />
+					<Skill name ="HTML" href ="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png" />
+					<Skill name ="CSS" href ="https://cdn.worldvectorlogo.com/logos/css-3.svg" />
+					<Skill name="MatLab" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/670px-Matlab_Logo.png" />
+					<Skill name="C++" href="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" />
+					<Skill name="Astro" href="https://astro.build/assets/press/astro-icon-dark.png" />
+					<Skill name="Tailwind" href="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" />
+					<Skill name="Raspberry Pi" href="https://cdn.worldvectorlogo.com/logos/raspberry-pi.svg" />
+					<Skill name="Arduino" href="https://static-00.iconduck.com/assets.00/arduino-ide-icon-2048x2025-x4ims8sb.png" />
+					<Skill name="Linux Terminal" href="https://cdn.icon-icons.com/icons2/2148/PNG/512/terminal_icon_131942.png" />
+					<Skill name="Git" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" />
+				</div>
 		
 		</div>
 	</body>
