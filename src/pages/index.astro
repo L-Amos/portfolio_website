@@ -34,7 +34,7 @@ import Project from "../components/Project.astro";
 				</div>
 			</div>
 			<!-- Skills -->
-			<div class="w-3/5 mb-20">
+			<div class="w-3/5">
 				<p class="text-gray-600 font-heading text-6xl text-left m-10 underline decoration-green-400">My Skills</p>
 				<div class="grid grid-rows-3 grid-cols-4">
 					<Skill name ="Python" href="https://images.ctfassets.net/o7xu9whrs0u9/2ouLbxXuIPxE64HNdvmsSU/c948e2ca51d2b4802fcbe6ee9f65819c/Python-logo.png" />
@@ -52,11 +52,14 @@ import Project from "../components/Project.astro";
 				</div>
 			</div>
 			<!-- Projects -->
-			<div class="w-3/5">
+			<div class="w-3/5 mb-20">
 				<p class="text-gray-600 font-heading text-6xl text-left m-10 underline decoration-green-400">My Projects</p>
 				<Project title="A Simulation Of Mathematical Billiards - And A Novel Encryption System." grayscale="grayscale" href="https://blogs.ams.org/visualinsight/files/2016/11/bunimovich_stadium_trajectories.png">
 					This project, undertaken during my physics degree, simulates mathematical billiards in a range of different billiard table geometries.
 					Of particular note is the chaotic nature seen in a <strong>Bunimovich stadium</strong> table, which I was able to exploit to create a novel encryption system.
+				</Project>
+				<Project title="Detecting Targets In Noisy Radar Data" href="https://cdn-icons-png.flaticon.com/512/196/196345.png">
+					During this project, I worked with a team of four to program a system to determine the position of any detected targets in provided experimental radar data. My role was to isolate targets within the noisy signal.
 				</Project>
 			</div>
 		</div>
