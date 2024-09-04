@@ -1,15 +1,15 @@
 ---
 const pageTitle="Luke Amos";
-import Button from "../components/Button.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/header.astro";
 import Skill from "../components/Skill.astro";
 import Project from "../components/Project.astro";
+import 'aos/dist/aos.css'
 ---
 <html lang="en">
 	<Header pageTitle={pageTitle} />
 	<body class="overflow-x-hidden" >
 		<!-- Landing Page -->
-		<div class="w-screen h-screen flex items-center justify-center space-x-5 bg-slate-600">
+		<div id="landing" class="w-screen h-screen flex items-center justify-center space-x-5 bg-slate-600">
 			<div class="w-3/12 flex flex-col">
 				<p class="text-gray-100 font-heading text-9xl text-center">Hi, I'm <span class="text-green-400">Luke</span></p>
 				<p class="text-gray-300 font-body text-4xl text-justify">Give me a problem, no matter how ridiculous, and I will happily sit at my computer for hours on end until I have programmed a solution.</p>
@@ -18,7 +18,7 @@ import Project from "../components/Project.astro";
 		<!-- About Me -->
 		<div class="w-screen flex flex-col items-center">
 			<!-- Brief Intro -->
-			<div class="w-3/5">
+			<div data-aos="fade-right" dta-aos-delay="300" class="w-3/5">
 				<p class="text-gray-600 font-heading text-8xl text-center m-10 underline decoration-green-400">About Me</p>
 				<div class="w-full flex flex-row space-x-40">
 					<div class="w-4/12 flex items-center">
@@ -34,7 +34,7 @@ import Project from "../components/Project.astro";
 				</div>
 			</div>
 			<!-- Skills -->
-			<div class="w-3/5">
+			<div data-aos="fade-left" dta-aos-delay="300" class="w-3/5">
 				<p class="text-gray-600 font-heading text-6xl text-left m-10 underline decoration-green-400">My Skills</p>
 				<div class="grid grid-rows-3 grid-cols-4">
 					<Skill name ="Python" href="https://images.ctfassets.net/o7xu9whrs0u9/2ouLbxXuIPxE64HNdvmsSU/c948e2ca51d2b4802fcbe6ee9f65819c/Python-logo.png" />
@@ -52,7 +52,7 @@ import Project from "../components/Project.astro";
 				</div>
 			</div>
 			<!-- Projects -->
-			<div class="w-3/5 mb-20">
+			<div data-aos="fade-right" dta-aos-delay="300" class="w-3/5 mb-20">
 				<p class="text-gray-600 font-heading text-6xl text-left m-10 underline decoration-green-400">My Projects</p>
 				<Project title="A Simulation Of Mathematical Billiards - And A Novel Encryption System." grayscale="grayscale" href="https://blogs.ams.org/visualinsight/files/2016/11/bunimovich_stadium_trajectories.png">
 					This project, undertaken during my physics degree, simulates mathematical billiards in a range of different billiard table geometries.
@@ -63,6 +63,10 @@ import Project from "../components/Project.astro";
 				</Project>
 			</div>
 		</div>
+		<script>
+			import AOS from "aos";
+			AOS.init();
+		</script>
 	</body>
 </html>
 
