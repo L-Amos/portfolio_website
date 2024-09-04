@@ -1,12 +1,12 @@
 ---
-const {title, href, grayscale="grayscale-0"} = Astro.props;
+const {title, href, link, grayscale="grayscale-0"} = Astro.props;
 import Button from "./Button.astro"
 ---
 <div class="flex flex-row items-center p-10 lg:space-x-20">
     <div class="w-full lg:w-3/5">
         <p class="text-3xl text-gray-600 font-body mb-5"><strong>{title}</strong></p>
         <p class="text-xl text-gray-600 font-body mb-10"><slot /></p>
-        <Button href="/">See The Project</Button>
+        <Button href={link}>See The Project</Button>
     </div>
     <div class="w-0 lg:w-2/5">
         <img src={href} class={grayscale} />
