@@ -19,3 +19,9 @@
     background: rgba(74, 222, 128,1);
     border-radius: 5px;
 }
+
+.prose {
+    :h1 {
+        color: rgb(243, 244, 246)
+    }
+}

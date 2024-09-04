@@ -1,0 +1,15 @@
+---
+import Navbar from "../components/Navbar.astro"
+import Header from "../components/header.astro"
+import Prose from "../components/Prose.astro"
+---
+
+<html lang="en">
+	<Header />
+	<Navbar />
+	<body class="bg-gray-600">
+		<Prose>
+        	<slot />
+		</Prose>
+	</body>
+</html>
