@@ -3,18 +3,20 @@ const pageTitle="Luke Amos";
 import Header from "../components/header.astro";
 import Skill from "../components/Skill.astro";
 import Project from "../components/Project.astro";
+import Navbar from "../components/Navbar.astro"
 import 'aos/dist/aos.css'
 ---
 <html lang="en">
 	<Header pageTitle={pageTitle} />
-	<body class="overflow-x-hidden" >
+	<body class="overflow-x-hidden h-screen" >
 		<!-- Landing Page -->
-		<div id="landing" class="w-screen h-screen flex items-center justify-center space-x-5 bg-slate-600">
+		<div id="landing" class="w-screen h-5/6 flex items-center justify-center space-x-5 bg-slate-600">
 			<div class="w-3/12 flex flex-col">
 				<p class="text-gray-100 font-heading text-9xl text-center">Hi, I'm <span class="text-green-400">Luke</span></p>
 				<p class="text-gray-300 font-body text-4xl text-justify">Give me a problem, no matter how ridiculous, and I will happily sit at my computer for hours on end until I have programmed a solution.</p>
 			</div>
 		</div>
+		<Navbar />
 		<!-- About Me -->
 		<div class="w-screen flex flex-col items-center">
 			<!-- Brief Intro -->
