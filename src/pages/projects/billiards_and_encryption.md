@@ -11,5 +11,9 @@ The biggest issue I faced with this project was managing computational resources
 
 This project was undertaken as part of my Physics degree. As such, one of the requirements was that I utilise functional programming rather than OOP, as this made the marking process much easier. I have since **rewritten the code using OOP**, as I believe this makes more sense than simply storing the parameters of the ball and table as a collection of global variables.
 
+## Try It Out
+This webapp is being hosted for free by <a href="https://www.pythonanywhere.com/" target="_blank"><strong>PythonAnywhere</strong></a>, and as a result it can be slow. Please allow 20-30 seconds for the trajectories to be calculated.
+<iframe scrolling="no" class="bg-white border-8 border-green-400" width="100%" height="1280px" name="embedded_python_anywhere" src="https://lamos.pythonanywhere.com/"></iframe>
+
 ---
 <sup id="f1">1</sup> A billiard ball moving on a frictionless, pocketless table.
