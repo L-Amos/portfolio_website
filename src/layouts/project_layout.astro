@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar.astro"
 import Header from "../components/header.astro"
 import Prose from "../components/Prose.astro"
+const {frontmatter} = Astro.props
 ---
 
 <html lang="en">
@@ -9,6 +10,12 @@ import Prose from "../components/Prose.astro"
 	<Navbar />
 	<body class="bg-gray-600 overflow-x-hidden">
 		<Prose>
+			<h1>{frontmatter.title}</h1>
+			<div class="inline clear-both w-[100%]">
+				<h3 class="mt-[-2rem] float-left"> Skills: <strong>{frontmatter.skills}</strong></h3>
+				<a href={frontmatter.source} target="_blank" class="hover:text-green-400 transition w-auto text-white float-right mt-[-2rem]">View On GitHub</a>
+			</div>
+			<hr />
         	<slot />
 		</Prose>
 	</body>
