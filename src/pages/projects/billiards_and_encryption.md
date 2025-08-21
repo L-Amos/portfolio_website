@@ -1,7 +1,9 @@
 ---
 layout: ../../layouts/project_layout.astro
+title: A Simulation of Mathematical Billiards - And A Novel Encryption System
+skills: Python, Flask
+source: https://github.com/L-Amos/mathematical_billiards
 ---
-# A Simulation of Mathematical Billiards - And A Novel Encryption System
 ## Project Purpose
 The main focus of this project was to use Python to simulate mathematical billiards[<sup>1</sup>](#f1) in a range of different billiard table geometries: a rectangular table, an elliptical table and a Bunimovich-stadium table. The latter geometry is the most interesting, as it leads to chaotic behaviour of the billiard ball.
 
